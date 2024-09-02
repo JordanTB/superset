@@ -2073,7 +2073,6 @@ class DatabaseRestApi(BaseSupersetModelRestApi):
                 "sqlalchemy_uri_placeholder": engine_spec.sqlalchemy_uri_placeholder,
                 "preferred": engine_spec.engine_name in preferred_databases,
                 "engine_information": engine_spec.get_public_information(),
-                "supports_oauth2": engine_spec.supports_oauth2,
             }
 
             if engine_spec.default_driver:
